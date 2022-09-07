@@ -1,4 +1,4 @@
-# twilio-arduino v1
+# twilio-arduino
 Example code to use a LilyGO-T-SIM7000G in conjunction with various Twilio APIs
 
 ## Useful Links
@@ -74,15 +74,15 @@ Congrats! At this point, you are ready to load sketches and test your hardware.
 ## Helpful libraries and sample code for various objectives
 Relevant Library Dependencies (optional), loaded via the Arduino Library Manager
 
-* TinyGSM : Communication libraries for LTE chipset.
-* ArduinoHTTPClient : HTTP libraries for Arduino
-* Ethernet : TCP/IP stack
-* StreamDebugger : Various debugging tools
-* SSLClient : SSL to enable HTTPS
+* [TinyGSM](https://www.arduino.cc/reference/en/libraries/tinygsm/) : Communication libraries for LTE chipset.
+* [ArduinoHTTPClient](https://www.arduino.cc/reference/en/libraries/arduinohttpclient/) : HTTP libraries for Arduino
+* [Ethernet](https://www.arduino.cc/reference/en/libraries/ethernet/) : TCP/IP stack
+* [StreamDebugger](https://www.arduino.cc/reference/en/libraries/streamdebugger/) : Various debugging tools
+* [SSLClient](https://www.arduino.cc/reference/en/libraries/sslclient/) : SSL to enable HTTPS
+* [IRremote](https://www.arduino.cc/reference/en/libraries/irremote/) : Libraries for sending information over IR
 
 ## Other Twilion Repos for the LilyGO
 * Scott Lemon:
   * https://github.com/Wovyn/lilygo-t-sim7000g-asset-tracker-example
   * https://github.com/Wovyn/esp32-ble-advertisement-scanner-xiaomi-sensor-decoder
 * Brian Mgrdichian: TBD
-* TBD
