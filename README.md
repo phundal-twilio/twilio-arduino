@@ -6,7 +6,7 @@ Example code to use a LilyGO-T-SIM7000G in conjunction with various Twilio APIs
 
 ## IDE Setup for MacOS
 
-Instructions on setting up the Arduino environemnt for use with the LilyGO-T-SIM7000G
+Instructions on setting up the Arduino environment for use with the LilyGO-T-SIM7000G
 
 > Tested configuration:  MacBook Pro (16inch, 2019), MacOS Monterey 12.5.1
 
@@ -81,5 +81,8 @@ Relevant Library Dependencies (optional), loaded via the Arduino Library Manager
 * SSLClient : SSL to enable HTTPS
 
 ## Other Twilion Repos for the LilyGO
-* Scott Lemon: https://github.com/Wovyn/lilygo-t-sim7000g-asset-tracker-example
+* Scott Lemon:
+  * https://github.com/Wovyn/lilygo-t-sim7000g-asset-tracker-example
+  * https://github.com/Wovyn/esp32-ble-advertisement-scanner-xiaomi-sensor-decoder
 * Brian Mgrdichian: TBD
+* TBD
