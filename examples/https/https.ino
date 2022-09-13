@@ -1,14 +1,14 @@
 /*
  * Example of initiating HTTPS sessions via LTE connectivity
- * 
- * Critical to making this work: 
+ *
+ * Critical to making this work:
  * 1. Setup ca_cert.h file to represent HTTPS endpoint you want to use
  * 2. Set GPRS APN
  * 3. Set Endpoint server credentials
  * 4. Setup HTTPS request (GET/POST) as your application requires
- * 
+ *
  */
- 
+
 #define TINY_GSM_MODEM_SIM7000
 #define TINY_GSM_RX_BUFFER 1024 // Set RX buffer to 1Kb
 #define SerialAT Serial1
@@ -35,7 +35,7 @@ const char gprsPass[] = "";
 
 /*
  * Endpoint server details
- * 
+ *
  */
 
 const char weatherApiKey[] = ""; // Get a API key here: https://home.openweathermap.org/users/sign_up
@@ -55,9 +55,9 @@ const int  port = 443;
 
 
 /*
- * The file below you will need to create based on the website you would like to connect to securely.   
+ * The file below you will need to create based on the website you would like to connect to securely.
  * This file contains the trust anchor to ensure the site you are connecting to is valid.
- * 
+ *
  * Use the website: https://openslab-osu.github.io/bearssl-certificate-utility/
  * Enter the website to pull the certs from the URL, cut and past the result into the file below.
  */
@@ -173,7 +173,7 @@ void loop()
     if (modem.waitResponse(10000L) != 1) {
         DBG(" SGPIO=0,4,1,0 false ");
     }
-    
+
 #if TINY_GSM_TEST_GPRS
     // Unlock your SIM card with a PIN if needed
     if ( GSM_PIN && modem.getSimStatus() != 3 ) {
@@ -191,7 +191,7 @@ void loop()
       51 GSM and LTE only
      */
     String res;
-    res = modem.setNetworkMode(51);
+    res = modem.setNetworkMode(38);
     if (res != "1") {
         DBG("setNetworkMode  false ");
         return ;
@@ -243,7 +243,7 @@ if (modem.isGprsConnected()) {
 
       String cop = modem.getOperator();
       Serial.println("Operator:" + String(cop));
-    
+
       int csq = modem.getSignalQuality();
       Serial.println("Signal quality:" + String(csq) + "\n\n");
 /*
@@ -277,7 +277,7 @@ Serial.println(response);
 
 Serial.print("\nWaiting 60 seconds to make the call again...");
 delay(60000); // Wait 60 seconds before going again
-     
+
 
 
 #if TINY_GSM_TEST_GPRS
