@@ -289,15 +289,13 @@ delay(60000); // Wait 60 seconds before going again
     }
 #endif
 
-/*
-    Serial.println("Putting modem to sleep");
-    esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
-    delay(200);
-    esp_deep_sleep_start();
+Serial.println("Putting modem to sleep");
+esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
+delay(200);
+esp_deep_sleep_start();
 
-    // Do nothing forevermore
-    while (true) {
-        modem.maintain();
-    }
-*/
+// Do nothing forevermore
+while (true) {
+  modem.maintain();
+}
 }
