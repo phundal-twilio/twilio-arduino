@@ -1,7 +1,6 @@
 /*
  * Example of initiating HTTPS sessions for Twilio Sync
  * 
-
  * 
  */
  
