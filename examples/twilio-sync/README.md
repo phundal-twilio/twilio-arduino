@@ -16,7 +16,7 @@ Within the Arduino IDE, open `Tools > Manage Libraries...`
     1. `super` if you are using Twilio Super SIM
  3. Set endpoint server credentials
     1. Obtain an API key from https://www.twilio.com/try-twilio
-    2. Under `Account > Auth Tokens & API Keys`, create a new set of API keys. More on how to do this [here](https://www.twilio.com/docs/iam/keys/api-key).
+    2. Under `Account > Auth Tokens & API Keys`, create a new set of API keys. More on how to do this here: [API Key Resource](https://www.twilio.com/docs/iam/keys/api-key).
     3. For the new API Keys, copy the `key` and `secret` into `twilioAPIKey` and `twilioAPISecret`, respectively.  Alternatively (but not recommended), you can use your `Account SID` and `Auth Token`.
  4. In Twilio Sync, create a `new Sync Service` and `new Sync List`.  More on how to do this here: [Service Resource](https://www.twilio.com/docs/sync/api/service).
  5. Within the resource path, set the appropriate Sync service SID and Sync List SID.  More on how this URL is formatted here: [Update a ListItem resource](https://www.twilio.com/docs/sync/api/listitem-resource#update-a-listitem-resource).
