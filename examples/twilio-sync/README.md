@@ -23,4 +23,4 @@ Within the Arduino IDE, open `Tools > Manage Libraries...`
 
 ## Troubleshooting
 * To be able to see all the AT commands being run behind the scenes, uncomment line 17: `#define DUMP_AT_COMMANDS`
-* To check your the syntax of your payload, I like to use a service such as [webhook.site](https://webhook.site), setup a free account and start a listener.  Enter your listener as the server/resource combination to see your payload.
+* To check your the syntax of your payload, I like to use a service such as [webhook.site](https://webhook.site), setup a free account and start a listener.  Once this has been started, uncomment `#define TEST_URL_PAYLOAD`, and enter your listener URL path as the resource combination after the comment at `//Check payload at webhook.site`.
