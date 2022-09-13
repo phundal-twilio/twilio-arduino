@@ -11,7 +11,7 @@ Within the Arduino IDE, open **Tools > Manage Libraries...**
 
 ## Configuration
 
- 1. Copy over ca_cert.h file to with the correct HTTPS Trush Anchors you want to use.  In this example, the ca_cert.h is the TA for https://api.openweathermap.org/
+ 1. Copy over the **ca_cert.h** file with the proper Trust Anchor (TA) certificates you want to use.  In the example given, the ca_cert.h is the TA for https://api.openweathermap.org/ To do this:
     1. Open https://openslab-osu.github.io/bearssl-certificate-utility/
     2. Enter the URL your device will attach to with HTTPS.  In this example, I used https://api.openweathermap.org/
     3. Copy and past the resulting text into the ca_cert.h file
