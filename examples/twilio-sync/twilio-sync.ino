@@ -228,7 +228,7 @@ void loop()
       51 GSM and LTE only
      */
     String res;
-    res = modem.setNetworkMode(51);
+    res = modem.setNetworkMode(38);
     if (res != "1") {
         DBG("setNetworkMode  false ");
         return ;
