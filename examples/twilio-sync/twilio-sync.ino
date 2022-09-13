@@ -1,9 +1,9 @@
 /*
  * Example of initiating HTTPS sessions for Twilio Sync
- * 
- * 
+ *
+ *
  */
- 
+
 #define TINY_GSM_MODEM_SIM7000
 #define TINY_GSM_RX_BUFFER 1024 // Set RX buffer to 1Kb
 #define SerialAT Serial1
@@ -32,7 +32,7 @@
 /*
  * Your GPRS credentials, if any
  */
-const char apn[]  = "";     //SET TO YOUR APN
+const char apn[]  = "super";     //SET TO YOUR APN
 const char gprsUser[] = "";
 const char gprsPass[] = "";
 
@@ -40,7 +40,7 @@ const char gprsPass[] = "";
 /*
  * Endpoint server details.  Note this must be defined AFTER including SSLClient.h
  */
-  
+
 //Uncomment to send payload to webhook.site for testing
 //#define TEST_URL_PAYLOAD
 
@@ -54,14 +54,14 @@ const int  port = 443;
 const char twilioAPIKey[] = "";
 const char twilioAPISecret[] = "";
 /*
- * The file below you will need to create based on the website you would like to connect to securely.   
+ * The file below you will need to create based on the website you would like to connect to securely.
  * This file contains the trust anchor to ensure the site you are connecting to is valid.
- * 
+ *
  * Use the website: https://openslab-osu.github.io/bearssl-certificate-utility/
  * Enter the website to pull the certs from the URL, cut and past the result into the file below.
  */
 #include "ca_cert.h" // sync.twilio.com site cert
-#else 
+#else
 //Check payload at webhook.site
 const char server[] = "webhook.site";
 const char resource[] = "URL";
@@ -69,9 +69,9 @@ const int  port = 443;
 const char twilioAPIKey[] = "key";
 const char twilioAPISecret[] = "secret";
 /*
- * The file below you will need to create based on the website you would like to connect to securely.   
+ * The file below you will need to create based on the website you would like to connect to securely.
  * This file contains the trust anchor to ensure the site you are connecting to is valid.
- * 
+ *
  * Use the website: https://openslab-osu.github.io/bearssl-certificate-utility/
  * Enter the website to pull the certs from the URL, cut and past the result into the file below.
  */
@@ -123,7 +123,7 @@ HttpClient https_client = HttpClient(secure_presentation_layer, server, port);
 
  /**************************************************************************************
  *
- * Helper Functions 
+ * Helper Functions
  *
  **************************************************************************************/
 
@@ -143,7 +143,7 @@ HttpClient https_client = HttpClient(secure_presentation_layer, server, port);
  }
 
 
- 
+
 
 void setup()
 {
@@ -210,7 +210,7 @@ void loop()
     if (modem.waitResponse(10000L) != 1) {
         DBG(" SGPIO=0,4,1,0 false ");
     }
-    
+
 #if TINY_GSM_TEST_GPRS
     // Unlock your SIM card with a PIN if needed
     if ( GSM_PIN && modem.getSimStatus() != 3 ) {
@@ -280,7 +280,7 @@ if (modem.isGprsConnected()) {
 
       String cop = modem.getOperator();
       Serial.println("Operator:" + String(cop));
-    
+
       int csq = modem.getSignalQuality();
       Serial.println("Signal quality:" + String(csq) + "\n\n");
 
@@ -312,7 +312,7 @@ jsonDataEnc = "Data=" + jsonDataEnc + "&Ttl=600";
 
 // Package ready to deliver to Twilio!
 
-    
+
 /*
  * Start HTTPS request
  */
@@ -340,7 +340,7 @@ Serial.println(response);
 
 Serial.print("\nWaiting 60 seconds to make the call again...");
 delay(60000); // Wait 60 seconds before going again
-     
+
 
 
 #if TINY_GSM_TEST_GPRS
