@@ -3,6 +3,8 @@ Example code to use a LilyGO-T-SIM7000G in conjunction with various Twilio APIs
 
 ## Useful Links
 * LILYGO sample code: https://github.com/Xinyuan-LilyGO/LilyGO-T-SIM7000G
+* Basics on using Arduino IDE: https://docs.arduino.cc/software/ide-v1/tutorials/arduino-ide-v1-basics
+* Tips on programming for the Arduino: https://www.programmingelectronics.com/tutorial-3-arduino-ide-and-sketch-overview/
 
 ## IDE Setup for MacOS
 
