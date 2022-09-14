@@ -87,4 +87,5 @@ Relevant Library Dependencies (optional), loaded via the Arduino Library Manager
 * Scott Lemon:
   * https://github.com/Wovyn/lilygo-t-sim7000g-asset-tracker-example
   * https://github.com/Wovyn/esp32-ble-advertisement-scanner-xiaomi-sensor-decoder
-* Brian Mgrdichian: TBD
+* Brian Mgrdichian:
+  * [Dual Core IR Receiver for ESP32](/examples/dual_core_esp32_IR/)
