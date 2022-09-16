@@ -89,3 +89,4 @@ Relevant Library Dependencies (optional), loaded via the Arduino Library Manager
   * https://github.com/Wovyn/esp32-ble-advertisement-scanner-xiaomi-sensor-decoder
 * Brian Mgrdichian:
   * [Dual Core IR Receiver for ESP32](/examples/dual_core_esp32_IR/)
+* Alex Goldman: TBA
