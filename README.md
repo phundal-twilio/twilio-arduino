@@ -87,6 +87,7 @@ Relevant Library Dependencies (optional), loaded via the Arduino Library Manager
 * Scott Lemon:
   * https://github.com/Wovyn/lilygo-t-sim7000g-asset-tracker-example
   * https://github.com/Wovyn/esp32-ble-advertisement-scanner-xiaomi-sensor-decoder
+    * BLE Sensor Firmware: https://pvvx.github.io/ATC_MiThermometer/TelinkMiFlasher.html
 * Brian Mgrdichian:
   * [Dual Core IR Receiver for ESP32](/examples/dual_core_esp32_IR/)
 * Alex Goldman: TBA
